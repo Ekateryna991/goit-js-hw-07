@@ -16,11 +16,18 @@ const images = [
   },
 ];
 
-const navEl = document.querySelector("#gallery");
+const style = "gallery";
+const navEl = document.querySelector(`#${style}`);
 navEl.insertAdjacentHTML(
   "afterbegin",
   images.reduce((acc, { url, alt }) => {
-    acc += `<li><img src="${url}" alt=$alt}/></li>`;
+    acc += `<li class="${style}__li"><img src="${url}" alt=$alt width=640 height=320}/></li>`;
     return acc;
+    
   }, "")
+  
 );
+
+// const classList = document.gallery.classList;
+navEl.classList.add('ul-style');
+// li.classList.add('li-style');

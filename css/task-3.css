@@ -1,0 +1,15 @@
+.ul-style {
+  margin: 0;
+  display: block;
+  padding: 20px;
+  align-items: center;
+}
+
+.gallery__li {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.gallery__li:last-child {
+  margin-bottom: 0;
+}
